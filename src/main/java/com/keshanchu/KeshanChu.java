@@ -8,14 +8,8 @@ package com.keshanchu;
  */
 public class KeshanChu {
     public void aa(){
-        System.out.println("这是修改了一次的");
-        System.out.println("这是第二次修改");
-        System.out.println("master主干分支添加的--------------");
-        System.out.println("branch001分支添加的-==============");
+        System.out.println("master删除掉了全部");
 
-        System.out.println("branch001第二次添加且提交");
-        System.out.println("哈哈哈哈");
-        System.out.println("branch001修改了xxxxxxxxxxxxxxxxxxxxxxx");
 
     }
 }
