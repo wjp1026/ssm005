@@ -10,6 +10,7 @@ public class KeshanChu {
     public void aa(){
         System.out.println("master删除掉了全部");
         System.out.println("msster修改1");
+        System.out.println("在github上修改1");
 
     }
 }
