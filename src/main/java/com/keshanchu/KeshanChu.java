@@ -14,7 +14,7 @@ public class KeshanChu {
         System.out.println("branch001分支添加的-==============");
 
         System.out.println("branch001第二次添加且提交");
-        System.out.println("branch001修改了");
+        System.out.println("branch001修改了xxxxxxxxxxxxxxxxxxxxxxx");
 
     }
 }
