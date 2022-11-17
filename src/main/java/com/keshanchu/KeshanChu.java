@@ -7,4 +7,7 @@ package com.keshanchu;
  * @DESCRIPTION ： 描述
  */
 public class KeshanChu {
+    public void aa(){
+        System.out.println("这是修改了一次的");
+    }
 }
