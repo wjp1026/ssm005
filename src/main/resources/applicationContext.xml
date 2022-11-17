@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--
+        这是总文件  在该文件中引入其他分文件
+        改文件中扫描所有的层
+        每import一个文件中有扫描其他层 那么该在总文件中排除一个
+    -->
+    
+    <context:component-scan base-package="com">
+        <!--引入的spring-service.xml中扫描了service层 需要排除-->
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Service"/>
+        
+        <!--引入的spring-mvc.xml中扫描了controller层  需要排除-->
+        <context:exclude-filter type="annotation" expression="org.springframework.web.bind.annotation.RestController"/>
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
+    
+    <import resource="classpath:spring-mybatis.xml"></import>
+    <import resource="classpath:spring-service.xml"></import>
+    <import resource="classpath:spring-mvc.xml"></import>
+</beans>

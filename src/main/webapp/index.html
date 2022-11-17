@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="static/jquery-3.6.0.js"></script>
+    <script src="static/axios.js"></script>
+</head>
+<body>
+<button onclick="aa()">点我发送axios请求</button>
+<script>
+    function aa() {
+        axios.post(
+            'emp/selectAll',
+            {name: '你爷爷', age: 99}
+        ).then(function (response) {
+            console.log("成功")
+            console.log(response)
+            console.log(typeof (response))
+        }).catch(function (error) {
+            console.log("失败")
+        })
+    }
+</script>
+</body>
+</html>
